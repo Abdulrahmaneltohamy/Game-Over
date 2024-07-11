@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <!-- ~ bootstrap File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ~ Main CSS File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- ^ games section -->
+  <section class="games" id="sectionData">
+    <!-- * header -->
+    <header>
+      <img src="image/wraper.png" class="w-100" alt="wrapper photo">
+    </header>
+    <!-- * nav bar -->
+    <nav class="navbar navbar-expand-lg col-lg-9 col-md-6 mx-auto text-white position-sticky top-0 z-3">
+      <div class="container">
+        <h5 class="navbar-brand mb-0">
+          <img src="image/logo-sm.png" alt="logo photo" style="max-width: 40px"> Game Reviews
+        </h5>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+            <li class="nav-item">
+              <a role="button" class="nav-link nav-active" aria-current="page" data-category="mmorpg">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="shooter">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="sailing">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="permadeath">permadeath</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="superhero">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="pixel">pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- * game data -->
+    <main>
+      <section class="container py-4">
+        <div class="row g-4" id="gamesData">
+
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <!-- ^ game detalis section -->
+
+  <section class="game-detalis d-none py-3">
+    <div class="container">
+      <header class="mb-3 d-flex justify-content-between">
+        <h1 class="text-white">Details Game</h1>
+        <button class="btn-close btn-close-white" id="btnClose"></button>
+      </header>
+      <div class="row" id="contentDetalis">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ^ loading screen -->
+  <div class="loading d-none">
+    <span class="loader"></span>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
